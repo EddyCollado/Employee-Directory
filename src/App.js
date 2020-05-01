@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
+import Main from "./components/Main/Main";
 import Search from "./pages/Search";
-import Navbar from "./components/Navbar";
 import Wrapper from "./components/Wrapper";
 
 function App() {
@@ -30,8 +30,8 @@ function App() {
     // </div>
     <Router>
       <div>
-        <Navbar />
         <Wrapper>
+          <Main />
         <Route exact path="/search" component={Search} />
         </Wrapper>
       </div>
