@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
+import SearchName from "../components/SearchName/SearchName";
 import SearchResults from "../components/SearchResults";
-import Alert from "../components/Alert";
 
 class Search extends Component {
     state = {
@@ -40,14 +40,8 @@ handleFormSubmit = event => {
             <div>
                 <Container style={{ minHeight: "80%" }}>
                     <h1 className="text-center">Search for an Employee!</h1>
-                    <Alert
-                    type="danger"
-                    style={{ opacity: this.state.error ? 1 : 0, marginBottom: 10}}
-                    >
-                        {this.state.error}
-                    </Alert>
                     <SearchForm
-                    hanldeFormSubmmit={this.handleFormSubmit}
+                    handleFormSubmmit={this.handleFormSubmit}
                     handleInputChange={this.handleInputChange}
                     employees={this.state.employees}
                     />

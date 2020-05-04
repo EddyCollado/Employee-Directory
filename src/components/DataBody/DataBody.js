@@ -21,7 +21,7 @@ const DataBody = () => {
             <tr key={login.uuid}>
               <td data-th="Image" className="align-middle">
                 <img
-                  src={picture.medium}
+                  src={picture.large}
                   alt={"profile image for " + name.first + " " + name.last}
                   className="img-responsive"
                 />

@@ -1,9 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router } from "react-router-dom";
+// import logo from './logo.svg';
+// import './App.css';
 import Main from "./components/Main/Main";
-import Search from "./pages/Search";
+import Footer from "./components/Footer/index";
+// import Container from "./components/Container";
+import Header from "./components/Header/Header";
+// import Search from "./pages/Search";
 import Wrapper from "./components/Wrapper";
 
 function App() {
@@ -30,10 +33,14 @@ function App() {
     // </div>
     <Router>
       <div>
+        {/* <Container> */}
         <Wrapper>
+          <Header />
           <Main />
-        <Route exact path="/search" component={Search} />
+        {/* <Route exact path="/search" component={Search} /> */}
         </Wrapper>
+        <Footer />
+        {/* </Container> */}
       </div>
     </Router>
   );
