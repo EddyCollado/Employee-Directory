@@ -1,8 +1,8 @@
 import React from 'react';
-// import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 // import logo from './logo.svg';
 // import './App.css';
-import Main from "./components/Main/Main";
+import DataArea from "./components/DataArea/DataArea";
 import Footer from "./components/Footer/index";
 // import Container from "./components/Container";
 import Header from "./components/Header/Header";
@@ -31,18 +31,15 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    // <Router>
+    <Router>
       <div>
-        {/* <Container> */}
         <Wrapper>
           <Header />
-          <Main />
-        {/* <Route exact path="/search" component={Search} /> */}
+        <Route exact path="/Employee-Directory" component={DataArea} />
         </Wrapper>
         <Footer />
-        {/* </Container> */}
       </div>
-    // </Router>
+    </Router>
   );
 }
 
