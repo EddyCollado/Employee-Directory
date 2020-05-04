@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
 // import logo from './logo.svg';
 // import './App.css';
 import Main from "./components/Main/Main";
@@ -31,7 +31,7 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <Router>
+    // <Router>
       <div>
         {/* <Container> */}
         <Wrapper>
@@ -42,7 +42,7 @@ function App() {
         <Footer />
         {/* </Container> */}
       </div>
-    </Router>
+    // </Router>
   );
 }
 
