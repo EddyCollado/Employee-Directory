@@ -27,7 +27,7 @@
 
   :cake: An employee directory for Shenron Studios. Use the search bar to narrow down searches for particular employees in the Shenron Studios company.
 
-  ![Readme Demo](/utils/readme_video.gif)
+  ![Readme Demo](src/utils/shenron_studios.gif)
 
   ## Table of Contents 
 
