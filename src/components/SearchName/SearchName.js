@@ -7,7 +7,7 @@ const SearchName = () => {
     const context = useContext(DataAreaContext);
 
     return (
-        <div class="searchbox">
+        <div className="searchbox">
             <div className="input-group">
                 <div className="input-group-prepend">
                     <span className="input-group-text" data-toggle="popover" data-content="Disabled Popover"  id="searchBtn">
